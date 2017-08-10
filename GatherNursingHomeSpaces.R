@@ -74,10 +74,16 @@ temp <- POST(url , body = data, encode = "json", verbose())
 
 #Make a table and data frame of table
 
-table <- fromJSONstat(content(temp, "text")) #naming = "id"
+table <- fromJSONstat(content(temp, "text"), naming = "id") #naming = "id"
+table2 <- fromJSONstat(content(temp, "text"), naming = "label") #naming = "id"
+table3<-fromJSON(content(temp, "text"))
 
 NursingSpaces <- table[[1]]
 View(NursingSpaces)
+NursingSpaces2 <- table2[[1]]
+View(NursingSpaces2)
+NursingSpace3 <- table3[[1]]
+
 
 write.csv(NursingSpaces, file = "NursingSpaces.csv")
 
