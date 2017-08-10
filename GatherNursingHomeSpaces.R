@@ -33,7 +33,7 @@ url <- "http://data.ssb.no/api/v0/no/table/07790"
 
 region <- '{ "code": "Region",
 "selection": {  "filter": "item", "values": [/*Østfold*/"0101","0104",
-"0105", "0106"], "valueTexts":["Halden", "Moss", "Sarpsborg"], "elimination": true}}'
+"0105", "0106"], "valueTexts":["Halden", "Moss", "Sarpsborg"]}}'
 
 ## Here I include plasser i institusjon korrigert for utleie
 
@@ -49,8 +49,8 @@ content <- '{
 tid <- '{
   "code": "Tid",
 "selection": {
-"filter": "all",
-"values": ["*"]
+"filter": "item",
+"values": ["2009"]
 }  
 }'
 
