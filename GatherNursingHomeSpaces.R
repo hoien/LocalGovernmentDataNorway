@@ -7,7 +7,6 @@
 
 #Clear workspace
 
-rm(list = ls()) #Warning: use only if you do not need anything in the workspace
 
 #Packages needed to collect data through SSB api
 #For more information see: http://data.ssb.no/api
