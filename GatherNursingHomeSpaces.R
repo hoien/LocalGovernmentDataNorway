@@ -77,6 +77,7 @@ temp <- POST(url , body = data, encode = "json", verbose())
 table <- fromJSONstat(content(temp, "text"), naming = "id") #naming = "id"
 table2 <- fromJSONstat(content(temp, "text"), naming = "label") #naming = "id"
 table3<-fromJSON(content(temp, "text"))
+table4<-fromJSON
 
 NursingSpaces <- table[[1]]
 View(NursingSpaces)
